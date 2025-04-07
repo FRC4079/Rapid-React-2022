@@ -18,7 +18,7 @@ jobs:
     container: wpilib/roborio-cross-ubuntu:2022-18.04
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
@@ -33,7 +33,7 @@ jobs:
     container: gradle:jdk11
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
